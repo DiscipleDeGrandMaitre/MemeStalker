@@ -38,6 +38,8 @@ npm install
 cp .env.example .env
 ```
 
+
+
 Puis remplir les variables d'environnement dans le fichier .env.local au minimum la database ainsi que resend pour la vérification d'email.
 Si vous n'avez pas de compte Resend aller sur leur site https://resend.com/ pour en créer un et générer une api key.
 
@@ -49,7 +51,12 @@ npx auth secret
 
 # Pousser le schéma prisma à la base de données
 npx prisma db push
+
+# Creer le dossier public/web-export
+mkdir -p public/web-export
 ```
+
+Installer Godot version 4.5 et export le jeu qui se trouve dans la branch game dans le dossier public/web-export
 
 ### Lancer le projet
 
